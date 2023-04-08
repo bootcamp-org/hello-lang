@@ -1,0 +1,4 @@
+var name ="John Doe";
+var othername ="Sarah";
+
+print(name, othername);
