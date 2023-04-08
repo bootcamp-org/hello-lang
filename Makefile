@@ -1,4 +1,4 @@
-exec = hello.exe
+exec = hello.out
 sources = $(wildcard src/*.c)
 objects = $(sources:.c=.o)
 flags = -g
@@ -11,10 +11,9 @@ $(exec): $(objects)
 
 install:
 	make
-	cp ./hello.exe C:\Users\Mateus\AppData\Local\Microsoft\WindowsApps
+	cp ./hello.out /usr/local/bin/hello
 
 clean:
-	- rm *.exe
 	- rm *.o
 	- rm *.out
 	- rm src/*.o
