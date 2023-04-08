@@ -33,15 +33,34 @@ src
 The syntax is similar to JavaScript and it requires semicolons at the end of each statement. 
 
 ```javascript
-var person1 = "John Doe";
-var person2 = "Sarah";
+var name = "John Doe";
+var othername = "Sarah";
 
-print(person1, person2);
+print(name, othername);
 ```
 
-Result
+### Usage
 
 ```
+$ hello examples/print.hello
+
 Jhon Doe
 Sarah
 ```
+
+## Build
+
+> Local cmd
+
+- Run `make`
+- Execute `hello.out` with a filename, like this `$ hello.out examples/print.hello`
+
+> Global cmd
+
+- Run `sudo make install`
+- Execute `hello` with a filename, like this `$ hello examples/print.hello`
+
+
+> Clean workspace
+
+- Run `make clean`
